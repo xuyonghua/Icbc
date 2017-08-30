@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <ion-title>
+      任务列表
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goRoot()">
+        <ion-icon name="ios-home-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="status">
+      <ion-segment-button value="undone" (ionSelect)="tabSelect(1)">
+        未完成
+      </ion-segment-button>
+      <ion-segment-button value="done" (ionSelect)="tabSelect(2)">
+        已完成
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="goTaskDetail(item)"  *ngFor="let item of items">
+      <ion-avatar item-start>
+        <img src="assets/icon/local/visit.png">
+      </ion-avatar>
+      <h2>{{item}}</h2>
+    </button>
+  </ion-list>
+</ion-content>
+

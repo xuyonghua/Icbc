@@ -1,0 +1,27 @@
+<ion-content class="bg-color">
+
+  <div class="head">
+    <img src="assets/icon/person.png" style="border-radius: 50%;margin-left: 20px" (click)="login()">
+    <div class="login-user" (click)="login()">欢迎使用，点击登陆</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <ion-list>
+    <!--<button ion-item [navPush]="pageName" [navParams]="{'text':menu.text}" *ngFor="let menu of menuItems">
+      <ion-icon name="{{menu.icon}}" item-start></ion-icon>
+      <h2>{{menu.text}}</h2>
+      <ion-icon name="ios-arrow-forward-outline" item-end showWhen="android"></ion-icon>
+    </button>-->
+
+    <button ion-item [navPush]="pageName" [navParams]="{'text':menu.text}" *ngFor="let menu of menuItems" mode="ios">
+      <ion-icon name="{{menu.icon}}" item-start></ion-icon>
+      <h2>{{menu.text}}</h2>
+    </button>
+
+  </ion-list>
+
+  <p style="margin-left: 30px; margin-right: 30px;margin-top: 30px;" *ngIf="">
+    <button ion-button block (click)="logout()">退出登录</button>
+  </p>
+</ion-content>

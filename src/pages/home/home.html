@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title style="text-align: center">
+      <img src="assets/icon/logo.png" style="max-width: 60%"/>
+      <sub>(华商银行)</sub>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides autoplay="3000" loop pager style="height: auto">
+    <ion-slide *ngFor="let slide of slides" class="slide">
+      <img [src]="slide.image" class="slide-image"/>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col [navPush]="loanPage" [navParams]="{'type':''}">
+        <div style="height: 100px;text-align: center">
+          <img src="assets/icon/khzf.png" style="padding-top: 10px;width: 30%;display: block;margin:0 auto;">
+          <p>贷后走访</p>
+        </div>
+      </ion-col>
+      <ion-col [navPush]="crmPage">
+        <div style="height: 100px;text-align: center">
+          <img src="assets/icon/khzf.png" style="padding-top: 10px;width: 30%;display: block;margin:0 auto;">
+          <p>客户走访</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="height: 100px;text-align: center">
+          <img src="assets/icon/menu-add.png" style="padding-top: 10px;width: 30%;display: block;margin:0 auto;">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

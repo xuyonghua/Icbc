@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "D:\\workspace\\ionic\\plugman\\TaskManager",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "D:\\workspace\\ionic\\plugman\\TaskManager",
+        "spec": "D:\\workspace\\ionic\\plugman\\TaskManager",
+        "type": "directory"
+      },
+      "D:\\workspace\\ionic\\icbc\\node_modules"
+    ]
+  ],
+  "_from": "..\\plugman\\TaskManager",
+  "_id": "TaskManager@0.0.1",
+  "_inCache": true,
+  "_location": "/TaskManager",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "D:\\workspace\\ionic\\plugman\\TaskManager",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "D:\\workspace\\ionic\\plugman\\TaskManager",
+    "spec": "D:\\workspace\\ionic\\plugman\\TaskManager",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:..\\plugman\\TaskManager",
+  "_shasum": "7d18fe0cdd722bf32b1af27bb58bcf590981a990",
+  "_shrinkwrap": null,
+  "_spec": "D:\\workspace\\ionic\\plugman\\TaskManager",
+  "_where": "D:\\workspace\\ionic\\icbc\\node_modules",
+  "author": {
+    "name": "xyh"
+  },
+  "cordova": {
+    "id": "com.cordova.taskmanager",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "a cordova plugin",
+  "devDependencies": {},
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "TaskManager",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "0.0.1"
+}
